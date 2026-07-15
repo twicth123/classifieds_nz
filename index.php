@@ -203,9 +203,7 @@ require_once __DIR__ . '/includes/header.php';
                 <?= in_array($ad['AdID'], $favoriteAdIds) ? '<i class="bi bi-heart-fill"></i>' : '<i class="bi bi-heart"></i>' ?>
               </button>
             <?php endif; ?>
-            <a href="ad_details.php?id=<?= $ad['AdID'] ?>" class="ad-card-img-wrapper d-block">
-              <img src="<?= $ad['Thumb'] ? e(UPLOAD_URL . $ad['Thumb']) : 'https://placehold.co/300x180?text=No+Image' ?>" alt="<?= e($ad['Title']) ?>">
-            </a>
+            
             <div class="card-body p-3">
               <div class="d-flex justify-content-between align-items-center mb-2">
                 <span class="badge bg-light text-indigo border"><?= e($ad['Condition']) ?></span>
